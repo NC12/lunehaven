@@ -1,0 +1,25 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 79, in script
+  File "game/script.rpy", line 79, in python
+AttributeError: 'module' object has no attribute 'blit'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\Cheryl\Desktop\renpy-6.15.7-sdk\renpy\execution.py", line 288, in run
+    node.execute()
+  File "C:\Users\Cheryl\Desktop\renpy-6.15.7-sdk\renpy\ast.py", line 718, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Cheryl\Desktop\renpy-6.15.7-sdk\renpy\python.py", line 1297, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 79, in <module>
+    $ score = maze.main()
+  File "maze.py", line 109, in main
+  File "maze.py", line 50, in __init__
+AttributeError: 'module' object has no attribute 'blit'
+
+Windows-7-6.1.7601-SP1
+Ren'Py 6.15.7.374
+A Ren'Py Game 0.0
